@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">KidsEducationalApp</string>
+    <string name="string_alphabet">ALPHABET</string>
+    <string name="string_colors">COLORS</string>
+    <string name="string_numebrs">NUMBERS</string>
+    <string name="string_birds">BIRDS/ANIMAL</string>
+    <string name="string_body">BODY</string>
+    <string name="string_information">INFORMATION</string>
 </resources>
