@@ -8,7 +8,8 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        android:screenOrientation="landscape">
         <activity
             android:name=".HomePage"
             android:screenOrientation="landscape">
@@ -25,12 +26,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Alphabets" />
-        <activity android:name=".Birds" />
-        <activity android:name=".Numbers" />
-        <activity android:name=".BodyParts" />
-        <activity android:name=".Colors" />
-        <activity android:name=".Information"></activity>
+        <activity android:name=".Alphabets"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".Birds"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".Numbers"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".BodyParts"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".Colors"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".Information"
+            android:screenOrientation="landscape"></activity>
     </application>
 
 </manifest>
