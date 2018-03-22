@@ -16,6 +16,8 @@ public class Alphabets extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_alphabets);
 
+        getSupportActionBar().hide();
+
         im=(ImageView)findViewById(R.id.alphabet);
 
 
