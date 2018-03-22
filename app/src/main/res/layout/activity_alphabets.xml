@@ -5,12 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.kuncham.kidseducationalapp.Alphabets">
+    tools:context="com.kuncham.kidseducationalapp.Alphabets"
+    android:background="@drawable/background1">
 
     <ImageView
+        android:layout_marginTop="5dp"
         android:id="@+id/alphabet"
         android:layout_width="match_parent"
-        android:layout_height="265sp">
+        android:layout_height="335dp"
+        android:src="@drawable/a">
 
     </ImageView>
 
@@ -18,7 +21,7 @@
     <HorizontalScrollView
         android:id="@+id/horizontalscrollView"
         android:layout_width="fill_parent"
-        android:layout_height="100sp"
+        android:layout_height="50sp"
         android:layout_below="@id/alphabet">
 
 
