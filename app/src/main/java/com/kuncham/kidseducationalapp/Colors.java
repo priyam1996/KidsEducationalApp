@@ -1,7 +1,9 @@
 package com.kuncham.kidseducationalapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.ImageView;
 
 import com.synnapps.carouselview.CarouselView;
@@ -18,10 +20,21 @@ public class Colors extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_colors);
+       // getSupportActionBar().hide();
+
         carouselView = (CarouselView) findViewById(R.id.carouselView);
         carouselView.setPageCount(sampleImages.length);
 
         carouselView.setImageListener(imageListener);
+
+        ImageView home_image = (ImageView)findViewById(R.id.gohome_image);
+        home_image.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent homeIntent = new Intent(Colors.this,HomePage.class);
+                startActivity(homeIntent);
+            }
+        });
     }
 
     ImageListener imageListener = new ImageListener() {
@@ -40,6 +53,8 @@ public class Colors extends AppCompatActivity {
             return customView;
         }
     };*/
+
+
 
     }
 
