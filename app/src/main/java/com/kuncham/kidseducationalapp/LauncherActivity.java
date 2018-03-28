@@ -14,11 +14,11 @@ public class LauncherActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_launcher);
 
-        getSupportActionBar().hide();
+//        getSupportActionBar().hide();
         TimerTask ts=new TimerTask() {
             @Override
             public void run() {
-                Intent i=new Intent(LauncherActivity.this,HomePage.class);
+                Intent i=new Intent(LauncherActivity.this,WelcomeActivity.class);
                 startActivity(i);
                 finish();
             }
