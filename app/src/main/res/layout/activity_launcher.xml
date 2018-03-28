@@ -7,4 +7,21 @@
     tools:context="com.kuncham.kidseducationalapp.LauncherActivity">
 
 
+    <ImageView
+        android:layout_width="300sp"
+        android:layout_height="300sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/logo" />
+
+    <ProgressBar
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
 </RelativeLayout>
