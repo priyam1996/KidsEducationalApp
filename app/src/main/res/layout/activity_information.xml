@@ -1,19 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.kuncham.kidseducationalapp.Information">
+    tools:context="com.kuncham.kidseducationalapp.Information"
+    android:background="#de8cef">
 
     <ImageView
         android:id="@+id/gohome_image"
         android:layout_width="40sp"
         android:layout_height="40sp"
+        android:layout_alignTop="@+id/heading"
         android:contentDescription="@string/todo"
         android:src="@drawable/images"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="16dp"
-        tools:ignore="MissingConstraints" />
+        tools:layout_editor_absoluteY="16dp" />
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="533dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:background="#65b3f4"
+        android:gravity="center"
+        android:text="ABOUT US"
+        android:textColor="#000000"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="532dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:text="@string/information"
+        android:textSize="25dp" />
+
+</RelativeLayout>
