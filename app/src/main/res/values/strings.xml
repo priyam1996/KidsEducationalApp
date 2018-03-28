@@ -6,4 +6,48 @@
     <string name="string_birds">BIRDS/ANIMALS</string>
     <string name="string_body">BODY PARTS</string>
     <string name="string_information">INFORMATION</string>
+    <string name="a">A</string>
+    <string name="e">E</string>
+    <string name="f">F</string>
+    <string name="g">G</string>
+    <string name="b">B</string>
+    <string name="c">C</string>
+    <string name="z">Z</string>
+    <string name="y">Y</string>
+    <string name="x">X</string>
+    <string name="w">W</string>
+    <string name="s">S</string>
+    <string name="v">V</string>
+    <string name="u">U</string>
+    <string name="q">Q</string>
+    <string name="d">D</string>
+    <string name="i">I</string>
+    <string name="l">L</string>
+    <string name="p">P</string>
+    <string name="t">T</string>
+    <string name="h">H</string>
+    <string name="n">N</string>
+    <string name="r">R</string>
+    <string name="j">J</string>
+    <string name="o">O</string>
+    <string name="k">K</string>
+    <string name="m">M</string>
+    <string name="todo">TODO</string>
+
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_title">Alphabets</string>
+    <string name="slide_1_desc">The easiest way to learn Alphabets and Words for Kids</string>
+
+    <string name="slide_2_title">Numbers</string>
+    <string name="slide_2_desc">Numbers 1 to 10 for your Kids!</string>
+
+    <string name="slide_3_title">Body Parts</string>
+    <string name="slide_3_desc">Body Parts of Human to Learn for your Children!</string>
+
+    <string name="slide_4_title">Animals / Birds</string>
+    <string name="slide_4_desc">Animals and Birds to Learn for your Children!</string>
+
 </resources>
