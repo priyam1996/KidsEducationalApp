@@ -5,16 +5,15 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.ViewFlipper;
 
 import com.synnapps.carouselview.CarouselView;
 import com.synnapps.carouselview.ImageListener;
 
-public class Colors extends AppCompatActivity {
+public class Colors extends AppCompatActivity implements View.OnClickListener{
 
-    CarouselView carouselView;
-    int NUMBER_OF_PAGES = 11;
-
-    int[] sampleImages = {R.drawable.red, R.drawable.orange, R.drawable.yellow, R.drawable.green, R.drawable.blue,R.drawable.purple,R.drawable.pink,R.drawable.brown,R.drawable.white,R.drawable.black,R.drawable.grey};
+    ViewFlipper viewFlipper;
+    ImageView prev,next;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,10 +21,12 @@ public class Colors extends AppCompatActivity {
         setContentView(R.layout.activity_colors);
        // getSupportActionBar().hide();
 
-        carouselView = (CarouselView) findViewById(R.id.carouselView);
-        carouselView.setPageCount(sampleImages.length);
+        viewFlipper = (ViewFlipper)findViewById(R.id.viewFlipper);
+        prev = (ImageView)findViewById(R.id.prev_button);
+        next = (ImageView)findViewById(R.id.next_button);
 
-        carouselView.setImageListener(imageListener);
+        prev.setOnClickListener(this);
+        next.setOnClickListener(this);
 
         ImageView home_image = (ImageView)findViewById(R.id.gohome_image);
         home_image.setOnClickListener(new View.OnClickListener() {
@@ -37,25 +38,18 @@ public class Colors extends AppCompatActivity {
         });
     }
 
-    ImageListener imageListener = new ImageListener() {
-        @Override
-        public void setImageForPosition(int position, ImageView imageView) {
-            imageView.setImageResource(sampleImages[position]);
+    @Override
+    public void onClick(View view) {
+
+        if (view == next)
+        {
+            viewFlipper.showNext();
         }
-    };
-   /* ViewListener viewListener = new ViewListener() {
-
-        @Override
-        public View setViewForPosition(int position) {
-            View customView = getLayoutInflater().inflate(R.layout.view_custom, null);
-            //set view attributes here
-
-            return customView;
+        else if (view == prev)
+        {
+            viewFlipper.showPrevious();
         }
-    };*/
-
-
-
     }
+}
 
 
