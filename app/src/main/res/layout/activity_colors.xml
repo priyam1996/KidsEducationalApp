@@ -104,6 +104,16 @@
         android:layout_marginStart="10sp"/>
 
     <ImageView
+        android:id="@+id/sound"
+        android:layout_width="40sp"
+        android:layout_height="40sp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="37dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/sound" />
+
+    <ImageView
         android:id="@+id/prev_button"
         android:layout_width="50sp"
         android:layout_height="50sp"
