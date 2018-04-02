@@ -111,7 +111,9 @@
         android:layout_alignParentTop="true"
         android:layout_marginEnd="37dp"
         android:layout_marginTop="20dp"
-        android:src="@drawable/sound" />
+        android:src="@drawable/sound"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="37dp" />
 
     <ImageView
         android:id="@+id/prev_button"
