@@ -8,16 +8,90 @@
     android:background="#ffffff">
 
 
-    <com.synnapps.carouselview.CarouselView
-        android:id="@+id/carouselView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:fillColor="#FFFFFFFF"
-        app:pageColor="#00000000"
-        app:radius="6dp"
-        app:slideInterval="35000"
-        app:strokeColor="#FF777777"
-        app:strokeWidth="1dp" />
+    <ViewFlipper
+        android:id="@+id/viewFlipper"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ImageView
+            android:id="@+id/red_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/red"
+            android:contentDescription="@string/todo"
+            android:scaleType="fitCenter"/>
+        <ImageView
+            android:id="@+id/orange_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/orange"
+            android:contentDescription="@string/todo"
+            android:scaleType="fitCenter"/>
+        <ImageView
+            android:id="@+id/yellow_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/yellow"
+            android:contentDescription="@string/todo"
+            android:scaleType="fitCenter"/>
+        <ImageView
+            android:id="@+id/green_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/green"
+            android:contentDescription="@string/todo"
+            android:scaleType="fitCenter"/>
+        <ImageView
+            android:id="@+id/blue_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/blue"
+            android:contentDescription="@string/todo"
+            android:scaleType="fitCenter"/>
+        <ImageView
+            android:id="@+id/purple_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/purple"
+            android:contentDescription="@string/todo"
+            android:scaleType="fitCenter"/>
+        <ImageView
+            android:id="@+id/pink_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pink"
+            android:contentDescription="@string/todo"
+            android:scaleType="fitCenter"/>
+        <ImageView
+            android:id="@+id/brown_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/brown"
+            android:contentDescription="@string/todo"
+            android:scaleType="fitCenter"/>
+        <ImageView
+            android:id="@+id/white_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/white"
+            android:contentDescription="@string/todo"
+            android:scaleType="fitCenter"/>
+        <ImageView
+            android:id="@+id/black_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/black"
+            android:contentDescription="@string/todo"
+            android:scaleType="fitCenter"/>
+        <ImageView
+            android:id="@+id/grey_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/grey"
+            android:contentDescription="@string/todo"
+            android:scaleType="fitCenter"/>
+
+    </ViewFlipper>
 
     <ImageView
         android:id="@+id/gohome_image"
@@ -29,7 +103,25 @@
         android:contentDescription="@string/todo"
         android:layout_marginStart="10sp"/>
 
+    <ImageView
+        android:id="@+id/prev_button"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_marginTop="150sp"
+        android:layout_alignParentLeft="true"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/prev"
+        android:layout_alignParentStart="true"/>
 
+    <ImageView
+        android:id="@+id/next_button"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_marginTop="150sp"
+        android:layout_alignParentRight="true"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/next"
+        android:layout_alignParentEnd="true"/>
 
 
 
